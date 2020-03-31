@@ -93,7 +93,7 @@ class AES(object):
         self.state = [ r[c] for c in range(4) for r in rows ]
 
     @staticmethod
-    def gmul(a, b):
+    def gmul(a, b):             # Just a method for multiplying
         p = 0
         for c in range(8):
             if b & 1:
